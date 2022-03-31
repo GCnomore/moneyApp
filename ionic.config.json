@@ -1,0 +1,7 @@
+{
+  "name": "moneyApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
