@@ -6,8 +6,8 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 
 export default function Router(): JSX.Element {
   return (
-    <IonReactRouter>
-      <IonRouterOutlet animated={true}>
+    <IonReactRouter basename="/moneyApp">
+      <IonRouterOutlet basePath="/moneyApp">
         <Route exact path="/home" component={Home} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Redirect exact from="/" to="/home" />
