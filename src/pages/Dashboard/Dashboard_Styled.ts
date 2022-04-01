@@ -46,7 +46,7 @@ export const ChartSection = styled.section`
   margin: ${margin};
   border-radius: ${borderRadius};
 
-  > div {
+  > div:first-child {
     display: flex;
     position: relative;
     width: 100%;
@@ -64,6 +64,13 @@ export const ChartSection = styled.section`
       align-items: center;
       width: 100%;
     }
+  }
+
+  > div:last-child {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 `;
 

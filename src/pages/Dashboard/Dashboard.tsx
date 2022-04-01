@@ -41,7 +41,6 @@ const Dashboard = () => {
               style={{ labels: { fill: "white" } }}
               labelRadius={100}
               labels={({ datum }) => `# ${datum.y}`}
-              // labelComponent={<CustomLabel />}
               data={[
                 { x: 1, y: 5 },
                 { x: 2, y: 4 },
@@ -53,7 +52,7 @@ const Dashboard = () => {
           </div>
           <div>Chart description</div>
         </div>
-        <div></div>
+        <div>Savings</div>
       </Styled.ChartSection>
       <Styled.AdContainer2>ad</Styled.AdContainer2>
       <Styled.TransactionContainer>trans</Styled.TransactionContainer>
@@ -62,24 +61,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-const CustomLabel: any = (props: any) => {
-  return (
-    <g>
-      <VictoryLabel {...props} />
-      <VictoryTooltip
-        {...props}
-        x={200}
-        y={250}
-        orientation="top"
-        pointerLength={0}
-        cornerRadius={50}
-        flyoutWidth={100}
-        flyoutHeight={100}
-        flyoutStyle={{ fill: "black" }}
-      />
-    </g>
-  );
-};
-
-CustomLabel.defaultEvents = VictoryTooltip.defaultEvents;
