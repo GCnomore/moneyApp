@@ -13,7 +13,7 @@ export const SummarySection = styled.section`
   height: 7rem;
   padding: ${padding};
   margin: ${margin};
-  margin-top: 0;
+  margin-top: 0px;
   border-radius: ${borderRadius};
 
   div {
