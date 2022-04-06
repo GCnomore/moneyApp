@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/moneyApp/static/css/main.3f108cbe.css",
-    "main.js": "/moneyApp/static/js/main.cc40c344.js",
+    "main.js": "/moneyApp/static/js/main.b8fa064e.js",
     "static/js/630.1934dee0.chunk.js": "/moneyApp/static/js/630.1934dee0.chunk.js",
     "static/js/738.b94c6885.chunk.js": "/moneyApp/static/js/738.b94c6885.chunk.js",
     "static/js/372.4d799f01.chunk.js": "/moneyApp/static/js/372.4d799f01.chunk.js",
@@ -23,7 +23,7 @@
     "service-worker.js": "/moneyApp/service-worker.js",
     "index.html": "/moneyApp/index.html",
     "main.3f108cbe.css.map": "/moneyApp/static/css/main.3f108cbe.css.map",
-    "main.cc40c344.js.map": "/moneyApp/static/js/main.cc40c344.js.map",
+    "main.b8fa064e.js.map": "/moneyApp/static/js/main.b8fa064e.js.map",
     "630.1934dee0.chunk.js.map": "/moneyApp/static/js/630.1934dee0.chunk.js.map",
     "738.b94c6885.chunk.js.map": "/moneyApp/static/js/738.b94c6885.chunk.js.map",
     "372.4d799f01.chunk.js.map": "/moneyApp/static/js/372.4d799f01.chunk.js.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.3f108cbe.css",
-    "static/js/main.cc40c344.js"
+    "static/js/main.b8fa064e.js"
   ]
 }
