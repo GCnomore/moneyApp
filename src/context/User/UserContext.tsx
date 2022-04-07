@@ -13,7 +13,9 @@ const UserContext = React.createContext<{
   dispatch: () => null,
 });
 
-const UserContextProvider = ({ children }: UserContextProviderProps) => {
+const UserContextProvider: React.FC = ({
+  children,
+}: UserContextProviderProps) => {
   const [state, dispatch] = useReducer<React.Reducer<IUser, UserActions>>(
     userReducer,
     userState

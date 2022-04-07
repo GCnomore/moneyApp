@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  IonTabs,
   IonTabBar,
   IonTabButton,
   IonIcon,
@@ -12,12 +11,12 @@ import { calendar, personCircle, map, informationCircle } from "ionicons/icons";
 const NavBar: React.FC = () => {
   return (
     <IonTabBar slot="bottom">
-      <IonTabButton tab="home" href="/home">
+      <IonTabButton tab="home" href="/moneyApp/home">
         <IonIcon icon={calendar} />
         <IonLabel>Schedule</IonLabel>
         <IonBadge>6</IonBadge>
       </IonTabButton>
-      <IonTabButton tab="dashboard" href="/dashboard">
+      <IonTabButton tab="dashboard" href="/moneyApp/dashboard">
         <IonIcon icon={personCircle} />
         <IonLabel>Dashboard</IonLabel>
       </IonTabButton>

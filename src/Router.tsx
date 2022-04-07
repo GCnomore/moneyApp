@@ -7,9 +7,9 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 export default function Router(): JSX.Element {
   return (
     <IonReactRouter basename="/moneyApp">
-      <IonRouterOutlet basePath="/moneyApp">
-        <Route exact path="/moneyApp/" component={Home} />
-        <Route exact path="/moneyApp/dashboard" component={Dashboard} />
+      <IonRouterOutlet>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/dashboard" component={Dashboard} />
         <Redirect exact from="/" to="/moneyApp" />
       </IonRouterOutlet>
     </IonReactRouter>

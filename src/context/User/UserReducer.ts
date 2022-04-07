@@ -16,6 +16,7 @@ export interface IUser {
   relatedUsers: number[] | null;
   theme: String;
   avatar?: FormData | String;
+  quickActions?: string[];
   // location,
   // occupation,
 }

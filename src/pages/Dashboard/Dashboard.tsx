@@ -11,6 +11,7 @@ import {
 import * as Styled from "./Dashboard_Styled";
 
 const Dashboard = () => {
+  console.log("dashboardddddddd");
   return (
     <IonContent
       scrollEvents={true}
