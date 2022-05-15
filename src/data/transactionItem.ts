@@ -17,7 +17,6 @@ enum Category {
 interface ITransactionItem {
   name: string;
   icon: string;
-  category: string;
   isCustom?: boolean;
 }
 
@@ -26,22 +25,35 @@ const DEFAULT_TRANSACTION_ITEMS: {
   expense: { [key: string]: ITransactionItem[] };
 } = {
   income: [
-    { name: "payroll", icon: "", category: Category.INCOME },
-    { name: "bonus", icon: "", category: Category.INCOME },
-    { name: "gift", icon: "", category: Category.INCOME },
-    { name: "side_income", icon: "", category: Category.INCOME },
-    { name: "refund", icon: "", category: Category.INCOME },
-    { name: "dividend", icon: "", category: Category.INCOME },
-    { name: "coupon_reward", icon: "", category: Category.INCOME },
-    { name: "lottery", icon: "", category: Category.INCOME },
-    { name: "gamble", icon: "", category: Category.INCOME },
+    { name: "payroll", icon: "" },
+    { name: "bonus", icon: "" },
+    { name: "side_income", icon: "" },
+    { name: "dividend", icon: "" },
+    { name: "gift", icon: "" },
+    { name: "refund", icon: "" },
+    { name: "coupon_reward", icon: "" },
+    { name: "lottery", icon: "" },
+    { name: "gamble", icon: "" },
+    { name: "etc", icon: "" },
   ],
   expense: {
     [Category.HOUSE]: [
-      { name: "house_payment", icon: "", category: Category.HOUSE },
-      { name: "utility", icon: "", category: Category.HOUSE },
-      { name: "laundry", icon: "", category: Category.HOUSE },
-      // { name: "" },
+      { name: "house_payment", icon: "" },
+      { name: "utility", icon: "" },
+      { name: "laundry", icon: "" },
+      { name: "insurance", icon: "" },
+      { name: "tax", icon: "" },
+      { name: "fee", icon: "" },
+      { name: "etc", icon: "" },
+    ],
+    [Category.ENTERTAINMENT]: [
+      { name: "food", icon: "" },
+      { name: "drinks", icon: "" },
+      { name: "travel", icon: "" },
+      { name: "shopping", icon: "" },
+      { name: "fitness", icon: "" },
+      { name: "game", icon: "" },
+      { name: "entertainment", icon: "" },
     ],
   },
 };
