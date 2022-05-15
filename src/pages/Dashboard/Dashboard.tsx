@@ -8,9 +8,9 @@ import {
   VictoryTooltip,
 } from "victory";
 
-import * as Styled from "./Dashboard_Styled";
+import * as Styled from "./Dashboard.styled";
 
-const Dashboard = () => {
+const Dashboard: React.FC = () => {
   console.log("dashboardddddddd");
   return (
     <IonContent

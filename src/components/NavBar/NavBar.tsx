@@ -11,22 +11,21 @@ import { calendar, personCircle, map, informationCircle } from "ionicons/icons";
 const NavBar: React.FC = () => {
   return (
     <IonTabBar slot="bottom">
-      <IonTabButton tab="home" href="/moneyApp/home">
-        <IonIcon icon={calendar} />
-        <IonLabel>Schedule</IonLabel>
-        <IonBadge>6</IonBadge>
-      </IonTabButton>
-      <IonTabButton tab="dashboard" href="/moneyApp/dashboard">
+      <IonTabButton tab="dashboard" href="/moneyApp">
         <IonIcon icon={personCircle} />
         <IonLabel>Dashboard</IonLabel>
       </IonTabButton>
-
-      <IonTabButton tab="map">
-        <IonIcon icon={map} />
-        <IonLabel>Map</IonLabel>
+      <IonTabButton tab="home" href="/moneyApp/monthly">
+        <IonIcon icon={calendar} />
+        <IonLabel>Monthly</IonLabel>
       </IonTabButton>
 
-      <IonTabButton tab="about">
+      <IonTabButton tab="map" href="/moneyApp/annual">
+        <IonIcon icon={map} />
+        <IonLabel>Annual</IonLabel>
+      </IonTabButton>
+
+      <IonTabButton tab="about" href="/moneyApp/about">
         <IonIcon icon={informationCircle} />
         <IonLabel>About</IonLabel>
       </IonTabButton>
