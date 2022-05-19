@@ -9,7 +9,7 @@ export const PopOver = styled(IonPopover)`
   --box-shadow: none;
 `;
 
-export const PopOverContent = styled.a`
+export const PopOverContent = styled.div`
   margin: 0.25rem;
   padding: 0.75rem 1rem;
   background-color: white;

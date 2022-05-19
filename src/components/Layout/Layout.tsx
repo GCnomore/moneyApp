@@ -1,6 +1,7 @@
 import { IonContent, IonFab, IonFabButton, IonIcon } from "@ionic/react";
 import { add } from "ionicons/icons";
 import React, { ReactNode } from "react";
+import { useHistory } from "react-router";
 
 import { AppBar } from "../AppBar/AppBar";
 import NavBar from "../NavBar/NavBar";
@@ -11,6 +12,11 @@ interface ILayout {
 }
 
 export const Layout: React.FC = ({ children }: ILayout) => {
+  const history = useHistory();
+
+  const routeToAddExpense = () => history.push("/addExpense");
+  const routeToAddIncome = () => history.push("/addIncome");
+
   return (
     <>
       <AppBar />
@@ -32,11 +38,11 @@ export const Layout: React.FC = ({ children }: ILayout) => {
           translucent
           dismissOnSelect
         >
-          <Styled.PopOverContent href="/moneyApp/addIncome">
-            Add Income
-          </Styled.PopOverContent>
-          <Styled.PopOverContent href="/moneyApp/addExpense">
+          <Styled.PopOverContent onClick={routeToAddExpense}>
             Add Expense
+          </Styled.PopOverContent>
+          <Styled.PopOverContent onClick={routeToAddIncome}>
+            Add Income
           </Styled.PopOverContent>
         </Styled.PopOver>
       </IonFab>

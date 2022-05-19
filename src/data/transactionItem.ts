@@ -14,7 +14,7 @@ enum Category {
   SOCIAL = "social",
 }
 
-interface ITransactionItem {
+export interface ITransactionItem {
   name: string;
   icon: string;
   isCustom?: boolean;

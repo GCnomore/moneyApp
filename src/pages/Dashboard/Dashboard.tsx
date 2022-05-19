@@ -11,7 +11,6 @@ import {
 import * as Styled from "./Dashboard.styled";
 
 const Dashboard: React.FC = () => {
-  console.log("dashboardddddddd");
   return (
     <IonContent
       scrollEvents={true}
