@@ -17,7 +17,7 @@ interface AddTransactionProps extends RouteComponentProps {
 }
 
 const AddTransaction: React.FC<AddTransactionProps> = (props) => {
-  const [transactionType, setTransactionType] = useState<string>("");
+  const [transactionType, setTransactionType] = useState<string>();
   const { location } = props;
 
   useEffect(() => {
@@ -29,9 +29,10 @@ const AddTransaction: React.FC<AddTransactionProps> = (props) => {
   return (
     <div>
       <h2>Add {transactionType}</h2>
-      <span>{_.upperFirst(location.state.item.name)}</span>
+      <span>{location.state && _.upperFirst(location.state.item.name)}</span>
       <div>Date</div>
       <input placeholder="Enter amount" />
+      <button>Add</button>
     </div>
   );
 };
